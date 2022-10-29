@@ -1,8 +1,34 @@
+const button = document.querySelector("#button");
+const form = document.querySelector("#contactForm")
+
+console.log(form);
+console.log(button);
+
+form.addEventListener("submit", collapse);
+
+function collapse() {
+    if (validateForm = true)
+    return form.classList.toggle("hide");
+    event.preventDefault()
+
+    // if (validateForm = false)
+    // return validateForm()
+}
+
+
 //Add alert for fisrtname, hide page using css hide until field complete
 //include dynamic welcome message
 
 //header hamburger array about, gallery, contact us, testimonials 
 
+const burgerItems = ["About", "Gallery", "Contact us", "testimonials"];
+let burglen = burgerItems.length;
+let text = "<ul>";
+
+for (let i = 0; i < burglen.length; i++) {
+    text += "<li>" + burgerItems[i] + "</li>";
+}
+text += "</ul>";
 
 //
 
@@ -13,41 +39,31 @@ function validateForm() {
     let name = document.forms["contactForm"]["fName"];
     let surname = document.forms["contactForm"]["lName"];
     let email = document.forms["contactForm"]["email"];
-    let message = document.forms["contactForm"]["message"];
+    let message = document.forms["contactForm"]["Message"];
 
     if (name.value == "") {
-        window.alert("please enter your first name")
+        alert("please enter your first name")
         name.focus();
         return false;
     }
 
     if (surname.value == "") {
-        window.alert("please enter your surname")
+        alert("please enter your surname")
         surname.focus();
         return false;
     }
 
     if (email.value == "") {
-        window.alert("please enter your email")
+        alert("please enter your email")
         email.focus();
         return false;
     }
 
     if (message.value == "") {
-        window.alert("please enter your message to us")
+        alert("please enter your message to us")
         message.focus();
         return false;
     }
 
     return true;
 }
-
-const button = document.querySelector('#button');
-
-button.addEventListener('click', () => {
-    console.log('submitbuttonclicked');
-});
-
-button.addEventListener("click", () => {
-    button.classList.add('hide');
-})

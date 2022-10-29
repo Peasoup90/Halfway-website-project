@@ -6,21 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sculpture by Simon</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec06b16ae0.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
 
     
 
     <header class="heading">The header will be working hamburger
-
         
+        <ul class="hamburger">
+            <button.i class="fa-solid fa-bars" id="Burger">
+            <li>About</li>
+            <li>Gallery</li>
+            <li>Contact us</li>
+            <li>Testimonials</li>
+        </ul>
+    </button.i>
 
         <h1 class="H1">h1 title to shrink with mediaquery
 
     </h1>
     </header>
-
 
     <main class="content">
         main
@@ -30,25 +36,28 @@
             <div class="div3"> image with short lower text + mouseover effect </div>
             <div class="div4"> to contain article with a bio  </div>
             </div>
-        
-        <script src="app.js"></script>
+    
     </main>
-
-</body>
-footer to contain dyunamic contact form that closes when complete
+    footer to contain dynamic contact form that closes when complete
     <footer class="closing">
         Thank you for visiting {name}
-        <form id="contactForm" action="mailto:joseph_brittain@purplebeard.co.uk" onsubmit="return validateForm()" method="post">
+        <form id="contactForm" action="mailto:joseph_brittain@purplebeard.co.uk" onsubmit="return validateForm()" method="post" enctype="text/plain">
     <input type="text" id="fName" placeholder="Firstname"><br>
     <input type="text" id="lName" placeholder="Surname"><br>
     <input type="text" id="email" placeholder="Email"><br>
+    
     <textarea name="textbox" id="Message" cols="30" rows="10" placeholder="Message"></textarea><br>
     <button id="button">Submit</button>
         </form>
         
 
-        <div> working links to github + linkedin </div>
+        <div> working links to github + linkedin
+            
+        </div>
         
     </footer>
     <script src="app.js"></script>
+</body>
+
+    
 </html>
