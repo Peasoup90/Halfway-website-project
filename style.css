@@ -1,0 +1,49 @@
+* { 
+    background-color: black;
+    color: aliceblue;
+    padding: 1rem;
+    border: 0.2px solid red;
+    width: auto;
+}
+
+/*hamburger*/
+
+
+
+
+/*main*/
+.parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 5px;
+grid-row-gap: 5px;
+width: auto;
+height: auto;
+}
+
+.div1 { grid-area: 1 / 1 / 3 / 2; }
+.div2 { grid-area: 1 / 2 / 3 / 3; }
+.div3 { grid-area: 1 / 3 / 3 / 4; }
+.div4 { grid-area: 3 / 1 / 5 / 4; }
+
+
+/*footer*/
+
+#button {
+    background-color: darkcyan;
+    color: whitesmoke;
+    border-radius: 8px;
+}
+
+#button:hover {
+    background-color: coral;
+    color: black;
+    text-decoration: underline;
+    
+}
+
+
+.hide {
+    display: none;
+}
