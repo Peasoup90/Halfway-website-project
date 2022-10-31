@@ -21,14 +21,15 @@ function collapse() {
 
 //header hamburger array about, gallery, contact us, testimonials 
 
-const burgerItems = ["About", "Gallery", "Contact us", "testimonials"];
-let burglen = burgerItems.length;
-let text = "<ul>";
+cosnt = menuTrigger = document.querySelectorAll("[data-menu-toggle]");
 
-for (let i = 0; i < burglen.length; i++) {
-    text += "<li>" + burgerItems[i] + "</li>";
-}
-text += "</ul>";
+Array.prototype.forEach.apply(menuTrigger, [
+    function(TRIGGER) {
+        TRIGGER.addEventListener("click", function(event) 
+        event.preventDefault())
+        toggleSidebar()
+    }
+])
 
 //
 

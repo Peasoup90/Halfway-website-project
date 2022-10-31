@@ -10,23 +10,24 @@
 </head>
 <body>
 
-    
-
-    <header class="heading">The header will be working hamburger
-        
-        <ul class="hamburger">
-            <button.i class="fa-solid fa-bars" id="Burger">
-            <li>About</li>
+    <div class="wrapper">
+        <input id ="hamburgerMenuToggle" type="checkbox" />
+        <div class="sidebar">
+            <li>About us</li>
             <li>Gallery</li>
-            <li>Contact us</li>
             <li>Testimonials</li>
-        </ul>
-    </button.i>
+            <li>Contact us</li>
+    </div>
+        <div class="mainContent">
+            <div>
+                <label class="button" data-menu-toggle for="hamburgerMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>        
+        </div>
+    </div>
 
-        <h1 class="H1">h1 title to shrink with mediaquery
-
-    </h1>
-    </header>
+        <h1 class="H1">Sculpture by Simon</h1>
 
     <main class="content">
         main
@@ -38,9 +39,9 @@
             </div>
     
     </main>
-    footer to contain dynamic contact form that closes when complete
+    
     <footer class="closing">
-        Thank you for visiting {name}
+        Thank you for visiting
         <form id="contactForm" action="mailto:joseph_brittain@purplebeard.co.uk" onsubmit="return validateForm()" method="post" enctype="text/plain">
     <input type="text" id="fName" placeholder="Firstname"><br>
     <input type="text" id="lName" placeholder="Surname"><br>
@@ -49,10 +50,15 @@
     <textarea name="textbox" id="Message" cols="30" rows="10" placeholder="Message"></textarea><br>
     <button id="button">Submit</button>
         </form>
-        
+                
+        <div id="links">
+            <a  id="git" href="https://github.com/Peasoup90">
+                <i class="fa-brands fa-square-github"></i>
+            </a>
 
-        <div> working links to github + linkedin
-            
+            <a id="linkedIn" href="https://www.linkedin.com/in/joseph-brittain-38530399/">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
         </div>
         
     </footer>
