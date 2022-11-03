@@ -1,9 +1,6 @@
-//Add alert for fisrtname, hide page using css hide until field complete
-//include dynamic welcome message
-
-//header hamburger array about, gallery, contact us, testimonials 
-
 // cosnt = menuTrigger = document.querySelectorAll("[data-menu-toggle]");
+
+// Array = ["About us", "Gallery", "Testimonials", "Contact us"];
 
 // Array.prototype.forEach.apply(menuTrigger, [
 //     function(TRIGGER) {
@@ -13,13 +10,11 @@
 //     }
 // ])
 
-//
 
 
-
-//div 3 text 
+//div 3 text animate
 let i = 0;
-let txt = "Bespoke, hand carved, one-of-a-kind sculptures. Based in, but not limited to, the South-West of England. Please contact me for commission pieces and quotes.";
+let txt = "Bespoke, hand carved, one-of-a-kind sculptures. Based in, but not limited to, the South-West of England. Please contact me for commission pieces and quotes. Bespoke, hand carved, one-of-a-kind sculptures. Based in, but not limited to, the South-West of England. Please contact me for commission pieces and quotes.";
 let speed = 50; 
 
 function typeWriter() {
@@ -32,19 +27,18 @@ function typeWriter() {
 
 //form 
 
-const button = document.querySelector("#button");
-const form = document.querySelector("#contactForm")
+const button = document.querySelectorAll("#button");
+const form = document.querySelectorAll("#contactForm")
 
 console.log(form);
 console.log(button);
 
-form.addEventListener("submit", collapse);
+contactForm.addEventListener("submit", collapse);
 
-function collapse() {
-    if (validateForm = true)
-    return form.classList.toggle("hide");
+function collapse(event) {
     event.preventDefault()
-
+    if (validateForm == true)
+    return form.classList.toggle("hide");
 }
 
 function validateForm() {
@@ -57,7 +51,7 @@ function validateForm() {
         alert("please enter your first name")
         name.focus();
         return false;
-    }
+        }
 
     if (surname.value == "") {
         alert("please enter your surname")
